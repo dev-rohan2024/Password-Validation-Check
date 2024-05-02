@@ -1,0 +1,79 @@
+/* ==== import goole font - ("Space Mono", monospace) ==== */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* global css start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+/* ==== global css end ==== */
+/* ==== body css start ==== */
+body {
+  background-color: #8808e0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* ==== body css end ==== */
+/* ==== Password Validation css start ==== */
+.container {
+  background-color: #ffff;
+  padding: 30px;
+  border-radius: 10px;
+}
+.container .password-input {
+  position: relative;
+  margin-bottom: 15px;
+}
+.container .password-input input {
+  width: 100%;
+  height: 45px;
+  font-size: 18px;
+  border: 1.3px solid #bcb2b2;
+  border-radius: 5px;
+  padding: 0px 15px;
+  outline: 0;
+}
+.container .password-input input:focus {
+  border: 1.5px solid #8808e0;
+}
+.container .password-input i {
+  color: #555;
+  font-size: 19px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.container .password-contant p {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.container .password-contant ul li {
+  list-style: none;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.container .password-contant ul li.valid {
+  color: #675656;
+}
+.container .password-contant ul li:last-child {
+  margin-bottom: 0px;
+}
+.container .password-contant ul li i {
+  font-size: 10px;
+  margin-right: 10px;
+}
+.container .password-contant ul li i.checked {
+  font-size: 15px;
+}
+.container .password-contant ul span {
+  font-size: 18px;
+}
+/* ==== Password Validation css end ==== */
